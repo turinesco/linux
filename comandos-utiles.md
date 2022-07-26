@@ -64,7 +64,7 @@ Reemplazar (& gt;) mayor qué y (& lt;) menor qué.
 
 
 ## Convertir a PDF desde un cuaderno de Jupyter (.ipynb)
-    [command] jupyter nbconvert --to pdf {cuaderno-jupyter}
+    [command] jupyter nbconvert --to pdf {nombre-cuaderno-jupyter}.ipynb
 ----
 
 
@@ -89,7 +89,7 @@ Reemplazar (& gt;) mayor qué y (& lt;) menor qué.
 
 
 ## Recargar, reiniciar y ver el estado de un servicio
-    [commad] systemctl {reload | restart | status} {nombre-servicio}
+    [command] systemctl {reload | restart | status} {nombre-servicio}
 ----
 
 
@@ -157,7 +157,7 @@ Reemplazar (& gt;) mayor qué y (& lt;) menor qué.
 ----
 
 ## Mostrar la salida estandar de un comando por "paginación" que cubra la vista actual
-    [comment] Sin _scrooll wheel_ del mouse
+    [comment] Sin scrooll wheel del mouse
     [command] {comando} | less -R
     [options]
     -R : Mantener el formato de salida (colores, tabulación, entre otras cosas)
