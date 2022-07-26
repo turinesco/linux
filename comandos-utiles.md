@@ -156,6 +156,31 @@ Reemplazar (& gt;) mayor qué y (& lt;) menor qué.
     [command] git branch -M nuevo-nombre-de-la-rama-actual
 ----
 
+## Mostrar la salida estandar de un comando por "paginación" que cubra la vista actual
+    [comment] Sin _scrooll wheel_ del mouse
+    [command] {comando} | less -R
+    [options]
+    -R : Mantener el formato de salida (colores, tabulación, entre otras cosas)
+
+    [comment] Ejemplos del uso del comando
+    [command] mdv -i $COMANDOS_LINUX | less -R
+    [command] history | less -R
+    [command] ls --help | less -R
+----
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 !!! note:
