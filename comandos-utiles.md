@@ -100,8 +100,8 @@ Reemplazar (& gt;) mayor qué y (& lt;) menor qué.
     [options]
     venv : Creación de entornos virtuales
 
-    [comment] Activar el entorno creado
-    [command] {nombre-entorno-virtual}/bin/activate
+    [comment] Activar el entorno creado, el archivo activate es una fuente así que debe colocar el comando source para ejecutar el bash.
+    [command] source {nombre-entorno-virtual}/bin/activate
     
     [comment] Desactivar el entorno
     [command] deactivate 
