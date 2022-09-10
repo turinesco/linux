@@ -168,6 +168,30 @@ Reemplazar (& gt;) mayor qué y (& lt;) menor qué.
     [command] ls --help | less -R
 ----
 
+## Administrar un sitio web con Django 4.1.1 (10/09/2022)
+    [comment] Comandos de instalación y configuraciones prematuras de Django (a la fecha se tiene la v4.1.1) 
+    [command] mkdir {project_base_dir} && cd {project_base_dir}
+    [command] python3 -m venv venv
+    [command] source venv/bin/activate
+    [command] pip3 install django
+
+    [comment] 
+    [command] python3 -m django startproject {project_name} .
+	[options]
+	. : Crear el directorio principal del projecto, cuyo nombre es {project_name}, y el archivo manage.py dentro de {project_base_dir}
+    
+    [comment] Elegir un puerto que no genere conflicto con los puertos 'clásicos' de algunos servicios 'clásicos'
+    [command] python3 {project_base_dir}/manage.py runserver {port}
+    
+    [comment] Un projecto de Django consta de aplicaciones 
+    [command] python3 {project_base_dir}/manage.py startapp {app_name}
+    
+    [comment] Hacer migraciones (usando Django ORM)
+    [command] python3 {project_base_dir}/manage.py makemigrations [app_name]
+    [command] python3 {project_base_dir}/manage.py migrate [app_name]
+
+!!! note: las variables dentro de [] son opcionales y dentro de {} son obligatorias para la correcta ejecución del comando
+----
 
 
 
